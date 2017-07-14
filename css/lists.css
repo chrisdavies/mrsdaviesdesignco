@@ -1,0 +1,14 @@
+.list-items {
+  margin: 0 16px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.list-item {
+  padding: 16px;
+  border-bottom: 1px solid #EEE;
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}

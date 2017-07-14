@@ -1,0 +1,304 @@
+.hero {
+  padding: 140px 16px;
+  position: relative;
+  color: white;
+  background-image: linear-gradient(
+    -20deg,
+    #728C28, #85AE8C
+  );
+}
+
+.hero:before {
+  position: absolute;
+  content: '';
+  background-image: linear-gradient(
+    -20deg,
+    #728C28, #85AE8C
+  );
+  height: 100%;
+  transform: skewY(-3deg);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 2em;
+}
+
+.hero-main-action {
+  background: RGBA(247, 104, 78, 1.00);
+  color: white;
+  padding: 12px 16px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1.4;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.15s;
+}
+
+.hero-main-action:hover {
+  transform: scale(1.05);
+}
+
+
+.user-quote {
+  padding: 80px 16px 64px;
+  position: relative;
+  background: #F5F5FC;
+}
+
+.user-quote-dark {
+  background: #061D28;
+  color: white;
+  background-image: linear-gradient(-20deg, #061D28, #26454C 70%);
+}
+
+.user-quote-accented:before {
+  position: absolute;
+  content: '';
+  background: #F5F5FC;
+  height: 100%;
+  transform: skewY(-3deg);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.user-quote-content {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  z-index: 1;
+}
+
+.user-quote-content:before {
+  content: "“";
+  position: absolute;
+  height: 128px;
+  width: 256px;
+  line-height: 200px;
+  top: 0;
+  left: -128px;
+  font-size: 256px;
+  opacity: 0.25;
+}
+
+.user-quote-dark .user-quote-content:before {
+  text-shadow: 2px 2px 8px #000;
+}
+
+.user-quote-pic {
+  border-radius: 100%;
+  float: left;
+  max-height: 128px;
+  max-width: 128px;
+  margin-right: 32px;
+  margin-bottom: 8px;
+}
+
+.user-quote-text {
+  overflow: hidden;
+}
+
+.user-quote-quote {
+  font-size: 1.2em;
+}
+
+.user-quote-user {
+  opacity: 0.5;
+}
+
+.flat-section {
+  position: relative;
+  z-index: 1;
+}
+
+.basic-section {
+  background: white;
+}
+
+.basic-section-green {
+  background: #85AE8C;
+  color: white;
+}
+.basic-section-green a {
+  color: inherit;
+}
+
+.basic-section-shaded {
+  background: #F5F5FC;
+}
+
+.basic-section-content {
+  padding: 80px 16px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.basic-section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.basic-section-header-title {
+  color: #1E3941;
+}
+
+.basic-section-footer {
+  text-align: center;
+  padding: 32px 16px 0;
+}
+
+.ico-card {
+  width: 40%;
+  padding: 16px;
+}
+
+.question-card:before,
+.ico-card-icon {
+  float: left;
+  margin-right: 17px;
+}
+
+.ico-card-content {
+  overflow: hidden;
+}
+
+
+.basic-section-cards-centered {
+  text-align: center;
+}
+
+.basic-section-cards {
+  text-align: justify;
+}
+
+.basic-section-cards:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.basic-section-card {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px;
+}
+
+.card-30 {
+  width: 30%;
+}
+
+.card-50 {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(45% - 32px);
+  text-align: left;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 16px 32px;
+}
+
+.card-auto {
+  margin: 0 32px;
+}
+
+
+.gallery-card {
+  padding: 16px;
+  background: white;
+  box-shadow: 2px 2px 24px -16px black;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.gallery-footnote {
+  opacity: 0.95;
+}
+
+.contact-item {
+  display: inline-block;
+  margin: 0 24px;
+}
+
+.contact-item-ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.contact-section {
+  color: white;
+  background: #061D28;
+}
+
+.social-links {
+  border-top: 1px solid #18303B;
+  padding: 32px 0;
+  margin-top: 32px;
+}
+
+.contact-item-link,
+.social-link {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: inherit;
+  opacity: 0.5;
+  margin: 8px;
+  display: inline-block;
+  transition: opacity 0.25s;
+}
+
+.contact-item-link:hover,
+.social-link:hover {
+  opacity: 1;
+}
+
+.ico-social {
+  width: 32px;
+}
+
+@media only screen and (max-width: 775px) {
+  .basic-section-cards-centered,
+  .basic-section-header {
+    text-align: left;
+  }
+
+  .hero {
+    padding: 80px 16px;
+  }
+
+  .contact-item {
+    margin-left: 0;
+  }
+
+  .quote-card,
+  .ico-card,
+  .card-30,
+  .card-50 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 0 0 32px;
+  }
+
+}

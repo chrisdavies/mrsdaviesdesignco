@@ -1,0 +1,41 @@
+{
+  "name": "attendance",
+  "version": "0.0.1",
+  "description": "A simple TypeScript example app",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server --no-browser --watch=\"./index.html,./dist\"",
+    "watch:css": "postcss -w -u postcss-import -u postcss-discard-comments -u postcss-cssnext -o ./dist/app.css ./css/app.css",
+    "watch:js": "webpack -w",
+    "start": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run serve\"",
+    "test": "mocha --opts mocha.opts",
+    "test:watch": "mocha --opts mocha.opts --watch"
+  },
+  "author": "Chris Davies",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "concurrently": "^3.4.0",
+    "eslint": "^3.19.0",
+    "live-server": "^1.2.0",
+    "mocha": "^3.3.0",
+    "mocha-webpack": "^0.7.0",
+    "postcss": "^6.0.1",
+    "postcss-cli": "^4.0.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^9.1.0",
+    "preact": "^8.1.0",
+    "preact-redux": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "rlite-router": "^2.0.1",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "ts-node": "^3.0.4",
+    "tsconfig-paths": "^2.1.2",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
+  }
+}
